@@ -61,8 +61,18 @@ keymap("n", "<silent> N", "Nzz", opts)
 keymap("n", "<silent> *", "*zz", opts)
 keymap("n", "<silent> #", "#zz", opts)
 keymap("n", "<silent> g*", "g*zz", opts)
-keymap("n", "?", "?\v", opts)
-keymap("n", "/", "/\v", opts)
+
+
+
+vim.cmd[[
+nnoremap <leader>o :e <C-R>=expand("%:p:h") . "/" <CR>
+" Very magic by default
+nnoremap ? ?\v
+nnoremap / /\v
+cnoremap %s/ %sm/
+]]
+
+
 
 
 -- disable / enable spellcheck
