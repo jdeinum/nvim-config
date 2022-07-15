@@ -136,6 +136,11 @@ return packer.startup(function(use)
 
 
   use {"ellisonleao/glow.nvim", branch = 'main'}
+
+  use({'scalameta/nvim-metals', requires = { "nvim-lua/plenary.nvim" }})
+
+
+
  
 
 

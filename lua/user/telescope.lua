@@ -115,4 +115,4 @@ local keymap = vim.api.nvim_set_keymap
 keymap("n", "<leader>ff", "<cmd>lua require('telescope.builtin').find_files{ cwd = vim.fn.systemlist('git rev-parse --show-toplevel')[1] }<cr>", opts)
 keymap("n", "<leader>s", "<cmd>lua require('telescope.builtin').live_grep{ cwd = vim.fn.systemlist('git rev-parse --show-toplevel')[1] }<cr>", opts)
 keymap("n", "<leader>;", ":Telescope buffers<cr>", opts)
-keymap("", "<F2>", ":Telescope spell_suggest<cr>", opts)
+keymap("", "<c-q>", ":Telescope spell_suggest<cr>", opts)

@@ -51,7 +51,7 @@ keymap("", "<F1>", "<ESC>", opts)
 
 
 -- copy / paste
-keymap("n", "<leader>c", ":w !xsel -ib<cr><cr>", opts)
+keymap("v", "<leader>c", ":w !xsel -ib<cr><cr>", opts)
 keymap("n", "<leader>p", ":read !xsel --clipboard --output<cr>:", opts)
 
 
@@ -73,10 +73,8 @@ cnoremap %s/ %sm/
 ]]
 
 
-
-
 -- disable / enable spellcheck
-keymap("n", "<silent> <c-s>", ":set spell!<cr>", opts)
+keymap("n", "<c-s>", ":set spell!<cr>", opts)
 
 
 -- clear old searches

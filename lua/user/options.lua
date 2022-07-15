@@ -59,7 +59,7 @@ o.gdefault = true
 -- others
 o.errorbells = false
 o.showmode = false
-bo.swapfile = false
+-- bo.swapfile = false
 o.backup = false
 o.incsearch = true
 o.hidden = true
@@ -81,6 +81,8 @@ inoremap <c-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 hi SpellBad gui=underline guifg=#ffcb6
 hi SpellCap gui=underline guifg=#ffcb6
 nnoremap <silent> <F1> :set spell!<cr>
+
+set directory^=$HOME/.vim/tmp//
 ]]
 
 
